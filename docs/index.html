@@ -25,6 +25,7 @@
     <nav class="nav" id="nav">
       <a href="#state">State</a>
       <a href="#control">Control</a>
+      <a href="#ood">OOD generalization</a>
       <a href="#clean">Clean video</a>
       <a href="#method">Method</a>
       <a href="#citation">Citation</a>
@@ -226,9 +227,51 @@
     </div>
   </section>
 
-  <section id="clean" class="showcase-section">
+  <section id="ood" class="showcase-section">
     <div class="wide reveal">
-      <div class="section-intro"><p class="eyebrow">04 · Clean video generation</p>
+      <div class="section-intro"><p class="eyebrow">04 · Out-of-distribution generalization</p>
+        <h2>Recovery is not an occluder lookup.</h2>
+        <p class="lead">At test time, we introduce held-out pure-white fog that becomes fully opaque—an occluder never seen during training. ReMind DMD-EMA still recovers the continuously evolved scene, showing that it learned persistent dynamics rather than memorizing interruption patterns.</p></div>
+      <div class="video-grid video-grid--4">
+<figure class="showcase-tile">
+  <div class="media-frame"><video src="assets/videos/ood-whiteout/01_gt.mp4" muted loop playsinline controls preload="none" data-autoplay aria-label="Pouring and foam ground truth"></video></div>
+  <figcaption><span class="tile-label">Pouring and foam · Ground truth</span></figcaption>
+</figure>
+<figure class="showcase-tile">
+  <div class="media-frame"><video src="assets/videos/ood-whiteout/01_dmd_ema.mp4" muted loop playsinline controls preload="none" data-autoplay aria-label="Pouring and foam ReMind DMD-EMA whiteout recovery"></video></div>
+  <figcaption><span class="tile-label">Pouring and foam · ReMind DMD-EMA</span></figcaption>
+</figure>
+<figure class="showcase-tile">
+  <div class="media-frame"><video src="assets/videos/ood-whiteout/02_gt.mp4" muted loop playsinline controls preload="none" data-autoplay aria-label="Granular pile ground truth"></video></div>
+  <figcaption><span class="tile-label">Granular pile · Ground truth</span></figcaption>
+</figure>
+<figure class="showcase-tile">
+  <div class="media-frame"><video src="assets/videos/ood-whiteout/02_dmd_ema.mp4" muted loop playsinline controls preload="none" data-autoplay aria-label="Granular pile ReMind DMD-EMA whiteout recovery"></video></div>
+  <figcaption><span class="tile-label">Granular pile · ReMind DMD-EMA</span></figcaption>
+</figure>
+<figure class="showcase-tile">
+  <div class="media-frame"><video src="assets/videos/ood-whiteout/03_gt.mp4" muted loop playsinline controls preload="none" data-autoplay aria-label="Dog and water ground truth"></video></div>
+  <figcaption><span class="tile-label">Dog and water · Ground truth</span></figcaption>
+</figure>
+<figure class="showcase-tile">
+  <div class="media-frame"><video src="assets/videos/ood-whiteout/03_dmd_ema.mp4" muted loop playsinline controls preload="none" data-autoplay aria-label="Dog and water ReMind DMD-EMA whiteout recovery"></video></div>
+  <figcaption><span class="tile-label">Dog and water · ReMind DMD-EMA</span></figcaption>
+</figure>
+<figure class="showcase-tile">
+  <div class="media-frame"><video src="assets/videos/ood-whiteout/04_gt.mp4" muted loop playsinline controls preload="none" data-autoplay aria-label="Batter spreading ground truth"></video></div>
+  <figcaption><span class="tile-label">Batter spreading · Ground truth</span></figcaption>
+</figure>
+<figure class="showcase-tile">
+  <div class="media-frame"><video src="assets/videos/ood-whiteout/04_dmd_ema.mp4" muted loop playsinline controls preload="none" data-autoplay aria-label="Batter spreading ReMind DMD-EMA whiteout recovery"></video></div>
+  <figcaption><span class="tile-label">Batter spreading · ReMind DMD-EMA</span></figcaption>
+</figure>
+</div>
+    </div>
+  </section>
+
+  <section id="clean" class="showcase-section section-soft">
+    <div class="wide reveal">
+      <div class="section-intro"><p class="eyebrow">05 · Clean video generation</p>
         <h2>Memory without a disturbance.</h2>
         <p class="lead">ReMind also produces clean, undisturbed video across animals, people, fluids, fire, granular material, and everyday actions.</p></div>
       <div class="video-grid video-grid--6">
@@ -308,9 +351,9 @@
     </div>
   </section>
 
-  <section id="method" class="method-section section-soft">
+  <section id="method" class="method-section">
     <div class="wide reveal">
-      <div class="section-intro"><p class="eyebrow">05 · Method</p>
+      <div class="section-intro"><p class="eyebrow">06 · Method</p>
         <h2>A causal model built to remember.</h2>
         <p class="lead">ReMind combines geometry-aware history, disturbance-robust training, and purpose-built dynamic video data to make out-of-sight state evolution work.</p></div>
       <div class="contribs">
@@ -325,7 +368,7 @@
 
   <section id="citation" class="citation-section">
     <div class="wide reveal">
-      <p class="eyebrow">06 · Citation</p>
+      <p class="eyebrow">07 · Citation</p>
       <h2>Citation</h2>
       <p>If you find ReMind useful, please cite our paper.</p>
       <div class="bibtex"><pre><code>@article{xu2026teaching,
@@ -341,7 +384,7 @@
 <footer class="site-footer"><div class="wide">
   <div class="foot-grid"><div><a class="brand-mark" href="#top"><span class="brand-word">ReMind</span></a>
     <p class="muted footer-note">Causal video generation with persistent world state.</p></div>
-  <nav><a href="#state">State evolution</a> · <a href="#control">Degradation control</a> · <a href="#clean">Clean video</a> · <a href="#citation">Citation</a> · <span class="foot-pending" aria-disabled="true">Code · coming soon</span></nav></div>
+  <nav><a href="#state">State evolution</a> · <a href="#control">Degradation control</a> · <a href="#ood">OOD generalization</a> · <a href="#clean">Clean video</a> · <a href="#citation">Citation</a> · <span class="foot-pending" aria-disabled="true">Code · coming soon</span></nav></div>
   <p class="copyright">ReMind · 2026</p>
 </div></footer>
 
