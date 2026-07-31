@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://remind-applied.github.io/sitemap.xml
